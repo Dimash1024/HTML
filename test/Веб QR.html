@@ -1,0 +1,183 @@
+
+<!-- saved from url=(0028)https://webqr.com/index.html -->
+<html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="QR Code scanner">
+  <meta name="keywords" content="qrcode,qr code,scanner,barcode,javascript">
+  <meta name="language" content="English">
+  <meta name="copyright" content="Lazar Laszlo (c) 2011">
+  <meta name="Revisit-After" content="1 Days">
+  <meta name="robots" content="index, follow">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Веб QR</title>
+
+<style type="text/css">
+body{
+    width:100%;
+    text-align:center;
+}
+img{
+    border:0;
+}
+#main{
+    margin: 15px auto;
+    background:white;
+    overflow: auto;
+	width: 100%;
+}
+#header{
+    background:white;
+    margin-bottom:15px;
+}
+#mainbody{
+    background: white;
+    width:100%;
+	display:none;
+}
+#footer{
+    background:white;
+}
+#v{
+    width:320px;
+    height:240px;
+}
+#qr-canvas{
+    display:none;
+}
+#qrfile{
+    width:320px;
+    height:240px;
+}
+#mp1{
+    text-align:center;
+    font-size:35px;
+}
+#imghelp{
+    position:relative;
+    left:0px;
+    top:-160px;
+    z-index:100;
+    font:18px arial,sans-serif;
+    background:#f0f0f0;
+	margin-left:35px;
+	margin-right:35px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:20px;
+}
+.selector{
+    margin:0;
+    padding:0;
+    cursor:pointer;
+    margin-bottom:-5px;
+}
+#outdiv
+{
+    width:320px;
+    height:240px;
+	border: solid;
+	border-width: 3px 3px 3px 3px;
+}
+#result{
+    border: solid;
+	border-width: 1px 1px 1px 1px;
+	padding:20px;
+	width:70%;
+}
+
+ul{
+    margin-bottom:0;
+    margin-right:40px;
+}
+li{
+    display:inline;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-weight: bold;
+    border-right: 1px solid #333333;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer a{
+	color: black;
+}
+.tsel{
+    padding:0;
+}
+
+</style>
+
+<script src="./Веб QR_files/cb=gapi.loaded_1" async=""></script><script type="text/javascript" async="" src="./Веб QR_files/ga.js.Без названия"></script><script src="./Веб QR_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" src="./Веб QR_files/llqrcode.js.Без названия"></script>
+<script type="text/javascript" src="./Веб QR_files/plusone.js.Без названия" gapi_processed="true"></script>
+<script type="text/javascript" src="./Веб QR_files/webqr.js.Без названия"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24451557-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Веб QR_files/translateelement.css"></head>
+
+<body>
+<div id="main">
+<div id="header">
+<div style="position:relative;top:+20px;left:0px;"><div id="___plusone_0" style="position: absolute; width: 450px; left: -10000px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1675250627836" name="I0_1675250627836" src="./Веб QR_files/fastbutton.html" data-gapiattached="true"></iframe></div><g:plusone size="medium" data-gapiscan="true" data-onload="true" data-gapistub="true"></g:plusone></div>
+<p id="mp1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Сканер QR-кода
+</font></font></p>
+<ul>
+<li><a href="https://webqr.com/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Сканировать</font></font></a></li>
+<li><a href="https://webqr.com/create.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Создавать</font></font></a></li>
+<li><a href="https://webqr.com/about.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">О</font></font></a></li>
+<li style="border: medium none;"><a href="https://webqr.com/contact.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Контакт</font></font></a></li>
+</ul>
+</div>
+<div id="mainbody" style="display: inline;">
+<table class="tsel" border="0" width="100%">
+<tbody><tr>
+<td valign="top" align="center" width="50%">
+<table class="tsel" border="0">
+<tbody><tr>
+<td><img class="selector" id="webcamimg" src="./Веб QR_files/vid.png" onclick="setwebcam()" align="left" style="opacity: 1;"></td>
+<td><img class="selector" id="qrimg" src="./Веб QR_files/cam.png" onclick="setimg()" align="right" style="opacity: 0.2;"></td></tr>
+<tr><td colspan="2" align="center">
+<div id="outdiv"><video id="v" autoplay=""></video></div></td></tr>
+</tbody></table>
+</td>
+</tr>
+<tr><td colspan="3" align="center">
+<img src="./Веб QR_files/down.png">
+</td></tr>
+<tr><td colspan="3" align="center">
+<div id="result"><br><a target="_blank" href="https://www.kaspersky.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.kaspersky.com </font></font></a><br><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.kaspersky.com</font></font></b><br><br></div>
+</td></tr>
+</tbody></table>
+<script async="" src="./Веб QR_files/f.txt"></script>
+<!-- webqr_2016 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8418802408648518" data-ad-slot="2527990541" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>&nbsp;
+<div id="footer">
+<img style="position:relative;top:0px;left:0px;margin:0;padding:0;" src="./Веб QR_files/comodo_secure_seal_100x85_transp.png">
+<h5 align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Copyright © 2011 </font></font><a target="_blank" href="http://www.lazarsoft.info/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Лазар Ласло</font></font></a></h5>
+</div>
+</div>
+<canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px;"></canvas>
+<script type="text/javascript">load();</script>
+
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Веб QR_files/translate_24dp.png" width="20" height="20" alt="Google Переводчик"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Исходный текст</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Предложить лучший вариант перевода</span></div><div class="started-activity-container"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><iframe name="oauth2relay432198971" id="oauth2relay432198971" src="./Веб QR_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div class="goog-te-spinner-pos goog-te-spinner-pos-show"><div class="goog-te-spinner-animation goog-te-spinner-animation-show"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
