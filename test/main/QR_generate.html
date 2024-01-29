@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="QR_generate.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="child">
+            <div class="child2"></div>
+            <div class="QR_Frame">
+                <svg class="bgQR" width="781" height="781" viewBox="0 0 781 781" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="38.2986" cy="58.5749" rx="352.201" ry="357.458" fill="#4990FF" />
+                    <ellipse cx="694.639" cy="836.571" rx="352.201" ry="357.458" fill="#4990FF" />
+                </svg>
+
+                <img class="QR " src="QR.png" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <div class="containTexts">
+                <div class="textus">
+                    <div class="instruction_QR">
+                        Отсканируйте QR-Code чтобы отметиться в <br>
+                        электронном жкрнале
+                    </div>
+                </div>
+                <div class="textus">
+                    <div class="ID_Code">
+                        #-699578
+                    </div>
+                    <div class="instruction_ID_Code">
+                        Если у вас не получается сканировать <br>
+                        вы можете ввести авторизационный код <br>
+                        в приложение AQIL.KZ
+                    </div>
+                </div>
+                <div class="textus">
+                    <div class="Timer">
+                        <script src="timer.js"></script>
+                        <div id="timer-display">
+                            осталось: хх мин хх секунд
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M11.9298 5.75488L11.6964 5.82516L2.37593 8.92309L0.256836 9.61621L1.49086 10.0083V16.4808C1.04572 16.7375 0.745227 17.2057 0.745227 17.7531C0.745227 18.1455 0.902342 18.5218 1.18201 18.7992C1.46168 19.0767 1.84099 19.2325 2.2365 19.2325C2.63201 19.2325 3.01132 19.0767 3.29098 18.7992C3.57065 18.5218 3.72777 18.1455 3.72777 17.7531C3.72777 17.2057 3.42728 16.7375 2.98213 16.4808V10.5187L4.4734 11.0032V14.7942C4.4734 15.4008 4.84622 15.9038 5.28913 16.2515C5.73203 16.5969 6.28231 16.841 6.94295 17.06C8.2657 17.4964 10.009 17.7531 11.9298 17.7531C13.8505 17.7531 15.5938 17.4972 16.9166 17.0592C17.5772 16.841 18.1275 16.5969 18.5704 16.2507C19.0133 15.9038 19.3861 15.4008 19.3861 14.7942V11.0032L21.4836 10.3093L23.6027 9.61621L21.4828 8.92235L12.1624 5.82516L11.9298 5.75488ZM11.9298 7.30459L18.9201 9.61621L11.9298 11.9278L4.93942 9.61621L11.9298 7.30459ZM5.96467 11.5121L11.6971 13.4073L11.9298 13.4768L12.1631 13.4065L17.8948 11.5114V14.7942C17.8948 14.8016 17.8978 14.8874 17.6615 15.0716C17.4258 15.2566 17.0031 15.4896 16.4498 15.673C15.3448 16.0377 13.7155 16.2737 11.9298 16.2737C10.144 16.2737 8.51474 16.0384 7.40897 15.6723C6.8572 15.4896 6.43368 15.2558 6.19806 15.0716C5.96094 14.8867 5.96467 14.8016 5.96467 14.7942V11.5114V11.5121Z"
+                                    fill="#B93634" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="FullScren">
+        <svg class="icoFullScren" width="45" height="45" viewBox="0 0 45 45" fill="none" d>
+            <rect width="45" height="45" fill="url(#pattern0)" />
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1137_3599" transform="scale(0.0104167)" />
+                </pattern>
+                <image id="image0_1137_3599" width="96" height="96"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACOUlEQVR4nO3dTU7cMBjG8WdFkVoQLNvbtHAOCnfox0hV1Rt0LtJhFrSFG8yIA/RjCftJW8E+lYUrzQKngMZ+kvH/J2WL7feZOIkSbAkAAAAAAAC4v11JR5Kmkn5IupbU3vNoJH2UtJEhgI34t5sH9Os6jimM7VDSjnpkU9JI0u8HDKxNHOMM/RyvsH+/JL2R9EhmzySdr3BgbTwWGfq6yNDPeayBRWj4MsOg2gEFEI4LSU9lmHZy/PLbgUxBt50JRaejUaaBND29CN/lCNeEYnc7XRfcE0nPJT3W+ngi6YWkz/+5MBe5Ozrs6MQ7rb/3HeM/KNGBaccvvxZfEzWYlGj8Z6LxMO3UYi9Rg/Cwlt1VovEwT9ZiK1GDUJvsUvNfbVpXHQjgBgGYEYAZAZgRgBkBmBGAGQGYEYAZAZgRQK0BLAq9w+07Wx3Ghd7h9p2tDsvvVnO+w+076gAAAAAAAAAAAAAAWDleRpvrwGcp5jrwYZa5DvyT3g2+DTUjADMCMCMAMwIwIwAzAjAjADMCMCMAMwKoNYDUkmVhGa9abCdq8Me5aF9YV7MW+4kafC/R+HGi8S+qx2miBp/cC7eGRU3X3Qf3wq27cZnetuNM2FuzZSy34rRz1jHupuTGDm87OlLr4t2vVHj5+nmmgbQDXL5+5thNgw0c5NvAYTmEecU7aMycxf8nnHqvVzy3jns+BTVxzPZNfJaFO4CX8TnhW8cT8xAvwldxTJN4q9mrbawAAAAAAACgQfgLkSTX6MKCkQMAAAAASUVORK5CYII=" />
+            </defs>
+        </svg>
+    </button>
+
+
+</body>
+
+</html>
