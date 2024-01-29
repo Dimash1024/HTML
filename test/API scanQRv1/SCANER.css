@@ -65,7 +65,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 13vh auto 15.6vh;
+    grid-template-rows: 9vh auto 15.6vh;
 }
 
 .target {
@@ -114,6 +114,9 @@ body {
 }
 
 .btn {
+    margin-top: 5vh;
+    border-radius: 7px;
+    padding: 1.3vh;
     display: block;
     border: none;
     background: #89C5EF;
