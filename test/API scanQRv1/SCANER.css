@@ -42,7 +42,7 @@ body {
     background-color: rgb(255, 255, 255);
     color: #0189EC;
     border: none;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
 
@@ -51,7 +51,7 @@ body {
     border: none;
     color: #0189EC;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
 
@@ -87,7 +87,7 @@ body {
 .info {
     color: #0189EC;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 600;
     background-color: #88c2eb6f;
     border-radius: 10px;
@@ -122,6 +122,6 @@ body {
     margin-right: auto;
     color: #0189EC;
     max-width: 71vw;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
