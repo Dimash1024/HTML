@@ -87,7 +87,7 @@ body {
 .info {
     color: #0189EC;
     text-align: center;
-    font-size: 4.4mm;
+    font-size: 5vh;
     font-weight: 600;
     background-color: #88c2eb6f;
     border-radius: 10px;
@@ -122,6 +122,6 @@ body {
     margin-right: auto;
     color: #0189EC;
     max-width: 71vw;
-    font-size: 4.4mm;
+    font-size: 5vh;
     font-weight: 600;
 }
