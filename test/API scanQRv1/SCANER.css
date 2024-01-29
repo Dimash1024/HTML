@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(255, 255, 255);
+    border-radius: 0 0 5vw 5vw;
 
 }
 
@@ -34,11 +35,13 @@ body {
 }
 
 .footer {
+    border-radius: 5vw 5vw 0 0  ;
     width: 100vw;
     background-color: rgb(255, 255, 255);
 }
 
 .back {
+    border-radius: 0 0 0 5vw;
     background-color: rgb(255, 255, 255);
     color: #0189EC;
     border: none;
