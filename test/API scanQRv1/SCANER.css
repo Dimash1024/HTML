@@ -42,7 +42,7 @@ body {
     background-color: rgb(255, 255, 255);
     color: #0189EC;
     border: none;
-    font-size: 4.1mm;
+    font-size: 5vh;
     font-weight: 600;
 }
 
@@ -51,7 +51,7 @@ body {
     border: none;
     color: #0189EC;
     text-align: center;
-    font-size: 4.4mm;
+    font-size: 5vh;
     font-weight: 600;
 }
 
