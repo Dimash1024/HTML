@@ -88,11 +88,12 @@ body {
 }
 
 .info {
+    margin-top: 1vh;
     color: #0189EC;
     text-align: center;
     font-size: 2.5vh;
     font-weight: 600;
-    background-color: #88c2eb6f;
+    background-color: #ededed6f;
     border-radius: 10px;
 }
 
@@ -122,7 +123,8 @@ body {
     padding: 1.3vh;
     display: block;
     border: none;
-    background: #89C5EF;
+    border: solid 5px #89C5EF;
+    background: #ffffff;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
