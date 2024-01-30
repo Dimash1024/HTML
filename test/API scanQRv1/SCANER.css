@@ -125,13 +125,13 @@ body {
 
 .info {
     margin-top: 1vh;
-    color: #0189EC;
-    /* color: #ffffff; */
+    /* color: #0189EC; */
+    color: #ffffff;
     /* background-color: #0000005c; */
     text-align: center;
     font-size: 2.5vh;
     font-weight: 600;
-    background-color: #ededed6f;
+    /* background-color: #ededed6f; */
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -163,7 +163,7 @@ body {
     padding: 1.3vh;
     display: block;
     border: none;
-    border: solid 5px #89C5EF;
+    border: solid 1vh #89C5EF;
     background: #ffffff;
     text-align: center;
     margin-left: auto;
