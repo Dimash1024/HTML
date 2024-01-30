@@ -5,6 +5,36 @@ body {
     padding: 0;
 }
 
+.content,
+.Background,
+.header,
+.window,
+.footer,
+.back,
+.text,
+.container,
+.pass,
+.info,
+.btn {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        background-color: black;
+        color: black;
+        border-color: black;
+        filter: brightness(0.25);
+    }
+
+    to {}
+
+    75% {}
+}
+
+
+
 .content {
     height: 100vh;
     width: 100vw;
@@ -35,7 +65,7 @@ body {
 }
 
 .footer {
-    border-radius: 5vw 5vw 0 0  ;
+    border-radius: 5vw 5vw 0 0;
     width: 100vw;
     background-color: rgb(255, 255, 255);
 }
@@ -48,7 +78,8 @@ body {
     font-size: 2.5vh;
     font-weight: 600;
 }
-.back:focus{
+
+.back:focus {
     color: black;
     /* background-color: rgb(220, 220, 220); */
 }
@@ -61,9 +92,10 @@ body {
     font-size: 2.5vh;
     font-weight: 600;
 }
-
-.pass {
-    /* background-color: aqua; */
+.pass{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius:0 0 5vw 0;
 }
 
 .container {
@@ -94,6 +126,8 @@ body {
 .info {
     margin-top: 1vh;
     color: #0189EC;
+    /* color: #ffffff; */
+    /* background-color: #0000005c; */
     text-align: center;
     font-size: 2.5vh;
     font-weight: 600;
@@ -116,7 +150,8 @@ body {
         margin-top: calc((100vh - 72vw)/8 + 7vh);
 
     }
-    .info{
+
+    .info {
         display: none;
     }
 
@@ -138,6 +173,7 @@ body {
     font-size: 2.5vh;
     font-weight: 600;
 }
-.btn:focus{
+
+.btn:focus {
     color: black;
 }
