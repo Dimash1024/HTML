@@ -5,17 +5,12 @@ body {
     padding: 0;
 }
 
-.content,
-.Background,
-.header,
+
+/* .Background,
 .window,
-.footer,
-.back,
-.text,
 .container,
-.pass,
-.info,
-.btn {
+.info
+ { 
     animation-duration: 3s;
     animation-name: slidein;
 }
@@ -31,7 +26,7 @@ body {
     to {}
 
     75% {}
-}
+} */
 
 
 
@@ -92,7 +87,8 @@ body {
     font-size: 2.5vh;
     font-weight: 600;
 }
-.pass{
+
+.pass {
     background-color: rgb(255, 255, 255);
     border: none;
     /* border-radius:0 0 5vw 0; */
@@ -142,12 +138,17 @@ body {
 }
 
 @media (orientation: landscape) {
+    .targetIMG {
+        height: 70vh;
+        width: 70vh;
+    }
+
     .target {
-        height: 36vw;
-        width: 36vw;
-        max-height: 71.4vh;
-        max-width: 71.4vh;
-        margin-top: calc((100vh - 72vw)/8 + 7vh);
+        height: 70vh;
+        width: 70vh;
+        max-height: 71.5vh;
+        max-width: 71.5vh;
+        margin-top: calc(2.5vh);
 
     }
 
@@ -180,4 +181,18 @@ body {
 
 .btn:focus {
     color: black;
+}
+
+.Left {
+    margin-left: -4vw;
+    margin-top: -0.8vh;
+    position: absolute;
+    height: 4vh;
+}
+
+.Right {
+    margin-left: 5px;
+    margin-top: -0.6vh;
+    position: absolute;
+    height: 4vh;
 }
