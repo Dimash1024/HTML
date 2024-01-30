@@ -48,6 +48,10 @@ body {
     font-size: 2.5vh;
     font-weight: 600;
 }
+.back:focus{
+    color: black;
+    /* background-color: rgb(220, 220, 220); */
+}
 
 .text {
     background-color: rgb(255, 255, 255);
@@ -95,6 +99,7 @@ body {
     font-weight: 600;
     background-color: #ededed6f;
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .targetIMG {
@@ -132,4 +137,7 @@ body {
     max-width: 71vw;
     font-size: 2.5vh;
     font-weight: 600;
+}
+.btn:focus{
+    color: black;
 }
