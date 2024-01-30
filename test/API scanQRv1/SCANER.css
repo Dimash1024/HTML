@@ -172,6 +172,10 @@ body {
     max-width: 71vw;
     font-size: 2.5vh;
     font-weight: 600;
+
+    background-color: #89C5EF;
+    color: #ffffff;
+
 }
 
 .btn:focus {
